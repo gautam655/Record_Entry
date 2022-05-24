@@ -1,0 +1,31 @@
+<%- include("./partials/header")%>
+   
+    <section>
+        <h2 style="text-align: center;">Register</h2>
+        <table>
+        <%for(let d of data){%>
+
+            <% if(d.email==mail){%>
+                <tr id="firstrow">
+                    <td><strong>ID</strong></td><td><%=d.id%></td>
+                    </tr>
+                <tr>
+                <td><strong>Name</strong></td><td><%=d.name%></td>
+                </tr>
+                <tr>
+                    <td><strong>Email:</strong></td><td><%=d.email%></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Address</strong></td><td><%=d.address%></td>
+                    </tr>
+                   
+                  
+                <form action="checkout/<%=d.id%>?_method=DELETE" method="POST">
+                 <td><button id="delete" type="submit">Delete Entry</button></td>
+                 </tr>
+            </form>
+        <%}%>
+            <%}%>
+        </table>
+</section>
+<%- include("./partials/footer")%>

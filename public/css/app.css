@@ -1,0 +1,47 @@
+body{
+    background-color:antiquewhite;
+}
+section{
+    background-color:#f2f3ca;
+    border:2px solid #ccc;
+    margin:auto;
+    width:600px;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+}
+li{
+    text-align: center;
+    padding: 10px;
+}
+table{
+    margin:auto;
+    background-color: antiquewhite;
+    text-align: center;
+    border-collapse: collapse;
+    width:75%;
+}
+td{
+    border: 2px solid rgb(199, 85, 85);
+    padding:5px;
+    width: 70%;
+    text-align: center;
+}
+
+#firstrow{
+    border-top: 2.5px solid black;
+}
+
+
+#delete{
+    background-color: green;
+    width: 100px;
+    height: 50px;
+    font-size: 1rem;
+    color:rgb(59, 163, 102);
+    border-radius: 10px;
+}
+#delete:hover{
+    background-color: red;
+}
